@@ -1,12 +1,14 @@
 
 import './App.css'
+import Banner from './components/Banner'
+import Navbar from './components/Navbar'
 
 function App() {
 
   return (
     <>
-    <h2 className='text-red-500'>Hi Guys</h2>
-    <i class="fa-solid fa-arrow-down"></i>
+    <Navbar />
+    <Banner />
     </>
   )
 }
