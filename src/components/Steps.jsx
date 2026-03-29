@@ -14,7 +14,7 @@ const Steps = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center mt-10 gap-10">
-        <div className="space-y-2 shadow-sm p-5 rounded-lg bg-white text-center">
+        <div className="space-y-2 shadow-sm p-5 rounded-2xl bg-white text-center">
             <div className="flex justify-end">
 
                 <h2 className="w-7 h-7 flex items-center justify-center bg-linear-to-r from-[#4F39F6] to-[#9514FA] p-1.5 text-white rounded-full text-[14px]">01</h2>
@@ -26,7 +26,7 @@ const Steps = () => {
             <p className="text-[#627382] mb-20">Sign up for free in seconds. No credit card required to get started. </p>
             
         </div>
-        <div className="space-y-2 shadow-sm p-5 rounded-lg bg-white text-center">
+        <div className="space-y-2 shadow-sm p-5 rounded-2xl bg-white text-center">
             <div className="flex justify-end">
                 <h2 className="w-7 h-7 flex items-center justify-center bg-linear-to-r from-[#4F39F6] to-[#9514FA] p-1.5 text-white rounded-full text-[14px]">02</h2>
             </div>
@@ -37,7 +37,7 @@ const Steps = () => {
             <p className="text-[#627382] mb-20">Browse our catalog and select the tools that fit your needs. </p>
             
         </div>
-        <div className="space-y-2 shadow-sm p-5 rounded-lg bg-white text-center">
+        <div className="space-y-2 shadow-sm p-5 rounded-2xl bg-white text-center">
             <div className="flex justify-end">
                 <h2 className="w-7 h-7 flex items-center justify-center bg-linear-to-r from-[#4F39F6] to-[#9514FA] p-1.5 text-white rounded-full text-[14px]">03</h2>
             </div>
