@@ -4,7 +4,7 @@ import buttonImg from "../assets/Play.png";
 
 const Banner = () => {
   return (
-    <div className="mt-10 w-9/12 mx-auto">
+    <div className="mt-20 w-9/12 mx-auto">
       <div className="flex flex-col md:flex-row items-center justify-between gap-10 text-center md:text-left">
         <div className="lg:w-159 space-y-5">
           <div className="inline-flex items-center gap-2 px-3 rounded-full bg-[#E1E7FF]">
