@@ -12,7 +12,7 @@ const ToolsHeadingTabs = ({ setActiveTab, carts }) => {
           to boost your productivity and creativity.
         </p>
       </div>
-      {/* name of each tab group should be unique */}
+      
       <div className="tabs tabs-box bg-transparent mt-6 border-none shadow-none justify-center items-center ">
         <input
           onClick={() => setActiveTab("Products")}
