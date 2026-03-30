@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Resume Pack",
+    "description": "Perfect for beginners to create a simple and clean resume.",
+    "price": 9.99,
+    "period": "One-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "20+ templates",
+      "Basic customization",
+      "Export to PDF",
+      "Good optimization"
+    ],
+    "icon": "https://i.ibb.co.com/JwMyjwLm/colorful-camera-logo-concept-vector-25619441.png"
+  },
+  {
+    "id": 2,
+    "name": "Pro Resume Builder",
+    "description": "Advanced resume builder with smart suggestions.",
+    "price": 4.99,
+    "period": "Monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "AI suggestions",
+      "Export to PDF & Word"
+    ],
+    "icon": "https://i.ibb.co.com/hJmYS4CN/operation.png"
+  },
+  {
+    "id": 3,
+    "name": "Career Boost Plan",
+    "description": "All-in-one package for job seekers with cover letters.",
+    "price": 49.99,
+    "period": "Yearly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "Unlimited resumes",
+      "Cover letter builder",
+      "Job tracking",
+      "Priority support"
+    ],
+    "icon": "https://i.ibb.co.com/CrB2fv4/portfolio.png"
+  },
+  {
+    "id": 4,
+    "name": "Portfolio Builder",
+    "description": "Create a stunning personal portfolio website easily.",
+    "price": 7.99,
+    "period": "Monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Custom domains",
+      "Drag & drop editor",
+      "SEO optimization",
+      "AI suggestions"
+    ],
+    "icon": "https://i.ibb.co.com/7tNCCnd3/shopping-cart.png"
+  },
+  {
+    "id": 5,
+    "name": "Interview Prep Kit",
+    "description": "Get ready for interviews with curated questions and tips.",
+    "price": 19.99,
+    "period": "One-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "500+ interview questions",
+      "Mock interviews",
+      "Expert tips",
+      "AI suggestions"
+    ],
+    "icon": "https://i.ibb.co.com/T52bBsz/social-media.png"
+  },
+  {
+    "id": 6,
+    "name": "Ultimate Career Suite",
+    "description": "Complete career solution with all premium tools included.",
+    "price": 79.99,
+    "period": "Yearly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "Everything in Pro",
+      "Portfolio builder",
+      "Interview prep",
+      "Career analytics dashboard"
+    ],
+    "icon": "https://i.ibb.co.com/YFYsth14/writing-2327400-1.png"
+  }
+]
