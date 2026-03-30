@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Navbar = ({ carts }) => {
+  const [open, setOpen] = useState(false);
   return (
     <div className=" bg-base-100 shadow-sm sticky top-0 z-50">
       <div className="navbar w-9/12 mx-auto justify-between">
@@ -43,38 +44,40 @@ const Navbar = ({ carts }) => {
           <button className="btn text-white rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] hidden md:flex">
             Get Started
           </button>
-          <div className="lg:hidden">
-            <button
-              popoverTarget="popover-1"
-              style={{ anchorName: "--anchor-1" } /* as React.CSSProperties */}
-            >
+          <div className="lg:hidden relative">
+            <button onClick={() => setOpen(!open)}>
               <i className="fa-solid fa-bars"></i>
             </button>
 
-            <ul
-              className="dropdown menu w-30 rounded-box bg-base-100 shadow-sm"
-              popover="auto"
-              id="popover-1"
-              style={
-                { positionAnchor: "--anchor-1" } /* as React.CSSProperties */
-              }
-            >
-              <li>
-                <p className="font-medium">Products</p>
-              </li>
-              <li>
-                <p className="font-medium">Features</p>
-              </li>
-              <li>
-                <p className="font-medium">Pricing</p>
-              </li>
-              <li>
-                <p className="font-medium">Testimonials</p>
-              </li>
-              <li>
-                <p className="font-medium">FAQ</p>
-              </li>
-            </ul>
+            {open && (
+              <ul className="absolute -right-10 mt-2 w-40 rounded-box bg-base-100 shadow-md z-50">
+                <li>
+                  <p className="font-medium p-2">Products</p>
+                </li>
+                <li>
+                  <p className="font-medium p-2">Features</p>
+                </li>
+                <li>
+                  <p className="font-medium p-2">Pricing</p>
+                </li>
+                <li>
+                  <p className="font-medium p-2">Testimonials</p>
+                </li>
+                <li>
+                  <p className="font-medium p-2">FAQ</p>
+                </li>
+                <li>
+                  <button className="btn w-full rounded-full my-1 text-[12px] md:hidden">
+                    Login
+                  </button>
+                </li>
+                <li>
+                  <button className="btn text-white w-full rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-[12px] md:hidden">
+                    Get Started
+                  </button>
+                </li>
+              </ul>
+            )}
           </div>
         </div>
       </div>
