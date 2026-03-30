@@ -2,7 +2,7 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <div className="w-9/12 mx-auto mt-20">
+    <div className="w-7/12 md:w-9/12 mx-auto mt-20">
       <div className="text-center mb-10">
         <h3 className="text-4xl font-extrabold">Simple, Transparent Pricing</h3>
         <p className="text-[#627382] mt-2">
