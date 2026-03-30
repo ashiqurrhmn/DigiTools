@@ -22,8 +22,9 @@ const Cart = ({ carts, setCarts }) => {
       <h2 className="text-2xl font-bold">Your Cart</h2>
       {carts.length === 0 ? (
         <div className="mt-5 text-center">
+            <i class="fa-solid fa-cart-shopping text-5xl mb-5"></i>
         <p className="text-xl font-medium">Cart is empty!!</p>
-        <p className="text-[14px] text-[#627382]">Go to Products and add items...</p>
+        <p className="text-[14px] text-[#627382]">Go to Products to add items...</p>
         </div>
       ) : (
         <>
