@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Pricing from "./components/Pricing";
 import Status from "./components/Status";
 import Steps from "./components/Steps";
+import Cart from "./components/Cart";
 
 const getTool = async () => {
   const res = await fetch("/data.json");
@@ -35,6 +36,7 @@ function App() {
       >
         <Tools toolPromise={toolPromise} />
       </Suspense>
+      <Cart/>
 
       <Steps />
       <Pricing />
