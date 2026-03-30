@@ -3,7 +3,7 @@ import React from "react";
 const ToolsHeadingTabs = ({ activeTab, setActiveTab, carts }) => {
 
   return (
-    <div className="w-7/12 md:w-9/12 mx-auto my-20">
+    <div className="w-9/12 mx-auto my-20">
       <div className="text-center">
         <h3 className="text-4xl font-extrabold">Premium Digital Tools</h3>
         <p className="text-[#627382] mt-2">

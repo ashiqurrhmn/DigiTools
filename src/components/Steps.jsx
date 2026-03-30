@@ -6,7 +6,7 @@ import cardImg3 from "../assets/rocket.png";
 const Steps = () => {
   return (
     <div className="bg-[#F9FAFC] py-30">
-      <div className="w-7/12 md:w-9/12 mx-auto ">
+      <div className="w-9/12 mx-auto ">
         <div className="text-center">
           <h3 className="text-4xl font-extrabold">Get Started in 3 Steps</h3>
           <p className="text-[#627382] mt-2">
