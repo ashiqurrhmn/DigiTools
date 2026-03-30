@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+
 import { toast } from "react-toastify";
 
 const ToolCard = ({ tool, carts, setCarts }) => {
   const isFound = carts.find((item) => item.id === tool.id);
   const handleBuyNow = () => {
-    // setIsBuyNow(true);
 
     if (isFound) {
       toast.error("Item is already in the cart!!");

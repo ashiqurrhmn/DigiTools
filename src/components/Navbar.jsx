@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = ({ carts }) => {
   return (
-    <div className=" bg-base-100 shadow-sm ">
+    <div className=" bg-base-100 shadow-sm sticky top-0 z-50">
       <div className="navbar w-9/12 mx-auto justify-between">
         <a className="text-2xl font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
           DigiTools

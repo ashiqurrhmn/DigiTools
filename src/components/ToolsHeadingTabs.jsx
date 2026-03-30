@@ -1,6 +1,6 @@
 import React from "react";
 
-const ToolsHeadingTabs = ({ setActiveTab, carts }) => {
+const ToolsHeadingTabs = ({ activeTab, setActiveTab, carts }) => {
 
   return (
     <div className="w-7/12 md:w-9/12 mx-auto my-20">
@@ -18,7 +18,7 @@ const ToolsHeadingTabs = ({ setActiveTab, carts }) => {
           onClick={() => setActiveTab("Products")}
           type="radio"
           name="my_tabs_1"
-          className="tab rounded-full w-25"
+          className={`${activeTab === "Products" ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : " text-black"} tab rounded-full w-25`}
           aria-label="Products"
           defaultChecked
         />
@@ -26,7 +26,7 @@ const ToolsHeadingTabs = ({ setActiveTab, carts }) => {
           onClick={() => setActiveTab("Carts")}
           type="radio"
           name="my_tabs_1"
-          className="tab rounded-full w-25"
+          className={`${activeTab === "Carts" ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : " text-black"} tab rounded-full w-25`}
           aria-label={`Cart (${carts.length})`}
         />
       </div>
