@@ -37,7 +37,7 @@ function App() {
           </div>
         }
       >
-        <Tools toolPromise={toolPromise} />
+        {activeTab === "Products" && <Tools toolPromise={toolPromise} />}
       </Suspense>
       {activeTab === "Carts" && <Cart />}
 
