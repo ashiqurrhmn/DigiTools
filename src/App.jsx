@@ -24,10 +24,10 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar carts={carts}/>
       <Banner />
       <Status />
-      <ToolsHeadingTabs activeTab={activeTab} setActiveTab={setActiveTab} />
+      <ToolsHeadingTabs activeTab={activeTab} setActiveTab={setActiveTab} carts={carts}/>
 
       <Suspense
         fallback={

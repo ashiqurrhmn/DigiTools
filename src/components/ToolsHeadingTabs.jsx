@@ -1,6 +1,6 @@
 import React from "react";
 
-const ToolsHeadingTabs = ({ setActiveTab }) => {
+const ToolsHeadingTabs = ({ setActiveTab, carts }) => {
 
   return (
     <div className="w-7/12 md:w-9/12 mx-auto my-20">
@@ -27,7 +27,7 @@ const ToolsHeadingTabs = ({ setActiveTab }) => {
           type="radio"
           name="my_tabs_1"
           className="tab rounded-full w-25"
-          aria-label="Cart (0)"
+          aria-label={`Cart (${carts.length})`}
         />
       </div>
     </div>
