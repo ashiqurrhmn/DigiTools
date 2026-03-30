@@ -1,4 +1,5 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const Cart = ({ carts, setCarts }) => {
   const totalPrice = Number(
@@ -7,13 +8,15 @@ const Cart = ({ carts, setCarts }) => {
 
   const handlePayment = () => {
     setCarts([]);
+    toast.success("Payment successful!");
   };
 
   const handleRemove = (id) =>{
     const updateCart = carts.filter((item) => item.id !== id);
     setCarts(updateCart);
-  }
-
+    toast.info("Item removed from cart!");
+  }     
+  
   return (
     <div className="w-9/12 mx-auto shadow-sm border border-gray-100 p-10 rounded-lg mb-20">
       <h2 className="text-2xl font-bold">Your Cart</h2>

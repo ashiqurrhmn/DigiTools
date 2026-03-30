@@ -10,6 +10,7 @@ import Status from "./components/Status";
 import Steps from "./components/Steps";
 import Cart from "./components/Cart";
 import ToolsHeadingTabs from "./components/ToolsHeadingTabs";
+import { ToastContainer} from "react-toastify";
 
 const getTool = async () => {
   const res = await fetch("/data.json");
@@ -38,14 +39,17 @@ function App() {
           </div>
         }
       >
-        {activeTab === "Products" && <Tools toolPromise={toolPromise} carts={carts} setCarts = {setCarts} />}
+        {activeTab === "Products" && (
+          <Tools toolPromise={toolPromise} carts={carts} setCarts={setCarts} />
+        )}
       </Suspense>
-      {activeTab === "Carts" && <Cart carts={carts} setCarts={setCarts}/>}
+      {activeTab === "Carts" && <Cart carts={carts} setCarts={setCarts} />}
 
       <Steps />
       <Pricing />
       <Footer />
       <Footer2 />
+      <ToastContainer />
     </>
   );
 }
