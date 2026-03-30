@@ -1,7 +1,7 @@
 import React from "react";
 
-const ToolsHeadingTabs = ({ activeTab, setActiveTab }) => {
-  console.log(activeTab);
+const ToolsHeadingTabs = ({ setActiveTab }) => {
+
   return (
     <div className="w-7/12 md:w-9/12 mx-auto my-20">
       <div className="text-center">

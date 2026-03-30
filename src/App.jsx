@@ -19,6 +19,7 @@ const getTool = async () => {
 function App() {
   const toolPromise = getTool();
   const [activeTab, setActiveTab] = useState("Products");
+  const [carts, setCarts] = useState([]);
 
   return (
     <>
@@ -37,9 +38,9 @@ function App() {
           </div>
         }
       >
-        {activeTab === "Products" && <Tools toolPromise={toolPromise} />}
+        {activeTab === "Products" && <Tools toolPromise={toolPromise} carts={carts} setCarts = {setCarts} />}
       </Suspense>
-      {activeTab === "Carts" && <Cart />}
+      {activeTab === "Carts" && <Cart carts={carts} />}
 
       <Steps />
       <Pricing />
