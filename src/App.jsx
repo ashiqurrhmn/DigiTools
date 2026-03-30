@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
@@ -9,6 +9,7 @@ import Pricing from "./components/Pricing";
 import Status from "./components/Status";
 import Steps from "./components/Steps";
 import Cart from "./components/Cart";
+import ToolsHeadingTabs from "./components/ToolsHeadingTabs";
 
 const getTool = async () => {
   const res = await fetch("/data.json");
@@ -17,12 +18,14 @@ const getTool = async () => {
 
 function App() {
   const toolPromise = getTool();
+  const [activeTab, setActiveTab] = useState("Products");
 
   return (
     <>
       <Navbar />
       <Banner />
       <Status />
+      <ToolsHeadingTabs activeTab={activeTab} setActiveTab={setActiveTab} />
 
       <Suspense
         fallback={
@@ -36,7 +39,7 @@ function App() {
       >
         <Tools toolPromise={toolPromise} />
       </Suspense>
-      <Cart/>
+      {activeTab === "Carts" && <Cart />}
 
       <Steps />
       <Pricing />

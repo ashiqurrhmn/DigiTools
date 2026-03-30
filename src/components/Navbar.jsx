@@ -45,7 +45,7 @@ const Navbar = () => {
             
             popoverTarget="popover-1"
             style={{ anchorName: "--anchor-1" } /* as React.CSSProperties */}
-          ><i class="fa-solid fa-bars"></i>
+          ><i className="fa-solid fa-bars"></i>
           </button>
 
           <ul
