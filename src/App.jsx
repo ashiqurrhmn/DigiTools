@@ -17,8 +17,8 @@ const getTool = async () => {
   return res.json();
 };
 
+const toolPromise = getTool();
 function App() {
-  const toolPromise = getTool();
   const [activeTab, setActiveTab] = useState("Products");
   const [carts, setCarts] = useState([]);
 
